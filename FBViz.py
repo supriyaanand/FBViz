@@ -9,12 +9,15 @@ class FBViz:
     def __init__(self, token):
         self.access_token = token
         self.access_str = 'access_token=' + self.access_token
-        self.friends_likes = {}
-        self.friends_music = {}
-        self.friends_books = {}
-        self.friends_sports = {}
-        self.friends_movies = {}
-        self.friend_dict = {}
+        self..user_id = 1 # User ID
+        self.user_name = 'ABC' # User name
+        self.user_likes = []
+        self.friends_likes = {}     # Dict to hold friend likes, Key : Friend Name, Value : List of likes
+        self.friends_music = {}     # Dict to hold friend music choices, Key : Friend Name, Value : List of music pages followed
+        self.friends_books = {}     # Dict to hold friend books choices, Key : Friend Name, Value : List of book pages followed
+        self.friends_sports = {}    # Dict to hold friend sports choices, Key : Friend Name, Value : List of sports pages followed
+        self.friends_movies = {}    # Dict to hold friend movie choices, Key : Friend Name, Value : List of movie pages followed
+        self.friend_dict = {}       # Dict to hold friend ID, Key : ID, Value : Friend name
         self.music_reco_from = ''
         self.movies_reco_from = ''
         self.books_reco_from = ''
@@ -25,10 +28,8 @@ class FBViz:
     def get_user_friends_ids(self):
         raw_data = []
         url = 'https://graph.facebook.com/' + str(self.user_id) + '/friends?' + self.access_str
-        print url
         r = requests.get(url)
         data = r.json()
-        pprint(data)
         for friend in data['data']:
             self.friend_dict[friend['id']] = friend['name']
 
@@ -56,10 +57,8 @@ class FBViz:
         count = 0
         raw_data = []
         url = 'https://graph.facebook.com/' + str(id) + '/likes?fields(id,name,category)&' + self.access_str
-        print url
         while True:
             r = requests.get(url)
-            pprint(r.json())
             raw_data.insert(count, r.json())
             try:
                 next_url = raw_data[count]['paging']['next'].encode('utf-8')
@@ -70,7 +69,6 @@ class FBViz:
 
         likes = []
         for dat in raw_data:
-            pprint(dat)
             for like in dat['data']:
                 likes.append(like['name'])
 
@@ -163,10 +161,9 @@ class FBViz:
 
 if __name__ == '__main__':
 
-    FB_obj = FBViz(
-        'CAACEdEose0cBAPdJzxeeopF24ZB9DrBlubT6zxEh82FcdOzaK5fRliUdOnG26wc1ayZAAZARTZCt62pX3zAGRZCg4am1vznRXaeOWO7fl5aOOQNhY67RteBdnf6QV1qeF0n9fqMAxK8efRaOoAeC2MALva7kQNtIeOwzXAdaQK0W4ZCZCOOwZBTL6dIGLqv7bm34QUTxdON7F6WjGBk7MMv54ZBgtePjBXokZD')
-    FB_obj.user_id = 834289639943985
-    FB_obj.user_name = 'Supriya Anand'
+    FB_obj = FBViz('') # Acces token for user
+    FB_obj.user_id = 1 # User ID
+    FB_obj.user_name = 'ABC' # User name
     FB_obj.user_likes = FB_obj.get_likes_by_id(FB_obj.user_id)
     FB_obj.get_user_friends_ids()
     '''
