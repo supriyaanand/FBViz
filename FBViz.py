@@ -191,9 +191,3 @@ if __name__ == '__main__':
     FB_obj.get_like_minded()
     FB_obj.build_graph()
 
-
-
-
-
-
-
