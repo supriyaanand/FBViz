@@ -1,0 +1,111 @@
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <key attr.name="key" attr.type="int" for="edge" id="d1" />
+  <key attr.name="color" attr.type="string" for="edge" id="d0" />
+  <graph edgedefault="undirected">
+    <node id="Rahat Fateh Ali Khan" />
+    <node id="Santosh Pavan Potnuru" />
+    <node id="Singer Kumar Sanu" />
+    <node id="Read a book? Ask me" />
+    <node id="Sports arena?" />
+    <node id="Krishna Bharadwaj" />
+    <node id="Similar tastes?" />
+    <node id="Sing along with" />
+    <node id="Pages you might like!!" />
+    <node id="Watch a movie? Ask me" />
+    <node id="Robert Downey Jr" />
+    <node id="MBakes" />
+    <node id="Aditya Puttaswamy" />
+    <node id="USC Entrepreneur Club" />
+    <node id="Humans of New York" />
+    <node id="Amit Agarwal" />
+    <node id="Music Mojo - Kappa TV" />
+    <node id="Supriya Anand" />
+    <node id="Trisha" />
+    <node id="Waus" />
+    <node id="Dream Theater" />
+    <edge source="Rahat Fateh Ali Khan" target="Pages you might like!">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Santosh Pavan Potnuru" target="Sports arena?">
+      <data key="d0">orange</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Singer Kumar Sanu" target="Pages you might like!">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Read a book? Ask me" target="Aditya Puttaswamy">
+      <data key="d0">blue</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Read a book? Ask me" target="Supriya Anand">
+      <data key="d0">blue</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Krishna Bharadwaj" target="Sing along with">
+      <data key="d0">yellow</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Krishna Bharadwaj" target="Similar tastes?">
+      <data key="d0">purple</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Sing along with" target="Supriya Anand">
+      <data key="d0">yellow</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Supriya Anand">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Watch a movie? Ask me" target="Supriya Anand">
+      <data key="d0">green</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Watch a movie? Ask me" target="Amit Agarwal">
+      <data key="d0">green</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Robert Downey Jr" target="Pages you might like!">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="MBakes">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Music Mojo - Kappa TV">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Trisha">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Dream Theater">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Waus">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="Humans of New York">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Pages you might like!" target="USC Entrepreneur Club">
+      <data key="d0">red</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Sports arena" target="Supriya Anand?">
+      <data key="d0">orange</data>
+      <data key="d1">0</data>
+    </edge>
+    <edge source="Supriya Anand" target="Similar tastes?">
+      <data key="d0">purple</data>
+      <data key="d1">0</data>
+    </edge>
+  </graph>
+</graphml>
