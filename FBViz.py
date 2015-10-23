@@ -9,7 +9,7 @@ class FBViz:
     def __init__(self, token):
         self.access_token = token
         self.access_str = 'access_token=' + self.access_token
-        self..user_id = 1 # User ID
+        self.user_id = 1 # User ID
         self.user_name = 'ABC' # User name
         self.user_likes = []
         self.friends_likes = {}     # Dict to hold friend likes, Key : Friend Name, Value : List of likes
